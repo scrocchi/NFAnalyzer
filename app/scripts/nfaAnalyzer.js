@@ -89,7 +89,7 @@ function run(words){
 
 function testWord( nodes, word ){
     //find entry nodes in the model and test the word on each one
-    var path = "";
+    var path = '';
     var isAccepted = false;
     var tempWord;
     nodes.forEach( node => {
@@ -123,7 +123,7 @@ function checkNextNode( nodes, actualNode, truncatedWord, path, word ){
         var nodeLinks = actualNode.enlaces;
         nodeLinks.forEach( link => {
             if( link.text == letter ){
-                path += actualNode.text + "-" + link.text + "->";
+                path += actualNode.text + '-' + link.text + '->';
                 if( accepted ){
                     checkNextNode( nodes, findNodeByKey( nodes, link.to ), truncatedWord.substr(1) , path, word);
                 }
