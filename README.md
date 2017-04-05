@@ -1,6 +1,6 @@
 # NFAnalyzer
 
-NFAnalizer is an experiment based on [JFLAP] to test multiple words into nondeterministic finite automatas.
+NFAnalyzer is an experiment based on [JFLAP] to test multiple words into nondeterministic finite automatas.
 
 ### Try it!
 https://scrocchi.github.io/NFAnalyzer/
