@@ -2,7 +2,7 @@ var JQ=jQuery;
 JQ.noConflict();
 
 JQ(document).ready(function(){
-
+    JQ('#mySavedModel').html('');
     //inputField processing
     var inputField = JQ('#inputField');
     var numberField = JQ('.count');
