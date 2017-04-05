@@ -138,7 +138,8 @@ function checkNextNode( nodes, actualNode, truncatedWord, path, word ){
             if( actualNode.accept ){
                 path += actualNode.text;
                 //output.addWord(word,true,path);
-                console.log(path);
+                
+                console.log(path); //log route
                 return true;
             }
         }else{
