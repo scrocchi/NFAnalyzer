@@ -1,0 +1,128 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #efefef;
+}
+
+h2{
+    font-weight: bold;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 20px;
+    margin-top: 40px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+#paper{
+    background: #f7f7f7;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #bebebe;
+    position: relative;
+}
+
+#outputField{
+    background-color: #2c2c2c;
+    color: white;
+    height: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+    #output{
+        overflow: auto;
+        display: block;
+        height: 100%;
+
+        li{
+            list-style-type: decimal;
+            list-style-position: inside;
+            color: gray;
+            margin-left: 5px;
+            //cursor: help;
+            span{
+                //color: white;
+            }&
+            .text-default{
+                color: white;
+            }
+        }
+    }
+}
+
+.main-title{
+    font-style: italic;
+    font-weight: bold;
+    .version{
+        font-style: normal;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #paper{
+        height: 450px;
+    }
+    #outputField{
+        height: 303px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #paper{
+        height: 500px;
+    }
+    #outputField{
+        height: 353px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+        #paper{
+        height: 600px;
+    }
+    #outputField{
+        height: 453px;
+    }
+}
